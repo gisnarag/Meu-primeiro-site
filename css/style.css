@@ -1,0 +1,82 @@
+/*Estilos de fonte aplicados desde a raiz*/
+:root {  
+  font-family: "Alice", serif;
+  line-height: 150%; /* altura da linha 1,5x o tamanho da fonte */
+  font-size: 1rem; /* igual ao tamanho da fonte do html equivalente a 16px */
+  color: #44330e;
+}
+
+header {
+    background-image: url(https://caesegatos.com.br/wp-content/uploads/cat-toe-beans-on-cat-bed-.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0.5%;
+    background-position: 80% 28%;
+    width: 100%;    
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color:#ecdfc7;
+}
+
+main { 
+    font-weight: normal;
+    font-style: italic;
+    text-transform: none;
+    line-height: 150%;
+    word-spacing: 5px;
+}
+
+h1 {
+    color: #44330e;
+    padding-left: 20px;
+}
+
+ul, a {
+    list-style: none;
+    display: flex; /* itens lado a lado */
+    justify-content: flex; /* centraliza o menu */
+    gap: 140px; /* espaço entre itens */
+    color: #44330e;
+    padding: 20px
+}
+
+img {
+    width: 350px;          
+    height: 300px;   
+    border-radius: 50%;  /* deixa a imagem circular */
+    object-fit: cover;
+    object-position: 6% 20%;
+}
+
+figcaption {
+    text-align: right;
+    }
+
+div figure {
+    margin-top: 15%;
+}
+
+#sobre-mim {
+    display: flex;           /* layout lado a lado */
+    align-items: center;     /* centraliza verticalmente */
+    gap: 40px;  
+    padding: 0 100px; 
+}
+
+h2 + p {
+letter-spacing: 1px;
+} 
+
+.lista {
+    padding: 3px;
+    color: red;        
+   
+}
+
+#aprendizados > div {
+    background-color: blue;
+}

@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Piloto</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Pacifico&display=swap" rel="stylesheet">
   </head>
 
   <body>
@@ -24,8 +28,9 @@
 
     <main>
       <section id="sobre-mim">
-        <h2>Sobre mim</h2>
-        <p>
+        <div>
+          <h2>Sobre mim</h2>
+          <p>
           Sou apaixonada por gatinhos. São duas fêmeas e um macho que considero
           meus filhos. Eles se chamam: Jade, Pompom e Duff. Meu sabor de sorvete
           favorito é menta, apesar de eu não tomar muito sorvete. Gosto de
@@ -33,33 +38,38 @@
           Stella, todas essas coisas trazem felicidade a minha vida, e sou muito
           grata pela existência delas. Estou fazendo o meu primeiro site em
           <abbr title="hyper text markup language"> HTML</abbr> traduzido
-          Linguagem de Marcação de Hipertexto e está sendo envolvente.
-        </p>
+          'Linguagem de Marcação de Hipertexto' e está sendo envolvente.
+          </p>
+        </div>
 
-        <figure>
-          <!-- Imagem para representar minha gatinha -->
-          <img
+        <div>
+          <figure>
+            <!-- Imagem para representar minha gatinha -->
+            <img
             src="https://cdn0.peritoanimal.com.br/pt/posts/9/5/8/gatos_carey_21859_6_600.jpg"
             alt="Semelhante a Jade"
-            width="400"
-          />
-          <figcaption>Olha a Jade 2.0 aí!</figcaption>
-        </figure>
+            width="400"/>
+            <figcaption>Olha a Jade 2.0 aí!</figcaption>
+          </figure>
+        </div>
       </section>
     </main>
 
     <section id="aprendizados">
-      <h2>Aprendizados</h2>
+      <div id="container-aprendizador">
+        <h2>Aprendizados</h2>
+      </div>
       <article>
         <h3>Assuntos Estudados:</h3>
         <ul>
-          <li>Fundamentos da Programação Web</li>
-          <li>Git e Github</li>
-          <li>
+          <li class="lista">Fundamentos da Programação Web</li>
+          <li class="lista">Git e Github</li>
+          <li class="lista">
             Fundamentos do <abbr title="hyper text markup language"> HTML</abbr>
           </li>
         </ul>
       </article>
+
       <article>
         <h3>Próximos passos:</h3>
         <ol>
@@ -68,8 +78,7 @@
           <li>Desafio prático - Local Turístico</li>
         </ol>
         <blockquote
-          cite="https://www.goodreads.com/quotes/1818-believe-you-can-and-you-re-halfway-there"
-        >
+          cite="https://www.goodreads.com/quotes/1818-believe-you-can-and-you-re-halfway-there">
           "Acredite que você pode,assim você já está no meio do caminho".
           -Theodore Roosevelt.
         </blockquote>
@@ -100,7 +109,7 @@
             &lt;head&gt;     &lt;/head&gt;
             &lt;body&gt;     &lt;/body&gt;
             &lt;/html&gt;
-        </code></pre>
+      </code></pre>
     </section>
 
     <section id="cronograma-de-estudos">
