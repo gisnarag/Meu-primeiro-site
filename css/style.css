@@ -19,6 +19,7 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    border: 0;
     background-color:#ecdfc7;
 }
 
@@ -26,19 +27,23 @@ main {
     font-weight: normal;
     font-style: italic;
     text-transform: none;
-    line-height: 150%;
+    line-height: 1.5;
     word-spacing: 5px;
 }
 
-h1 {
-    color: #44330e;
+#name-title { /*o cascate não funciona pois h1 perde para o ID devido à especificidade*/
+    color: #44330e; 
     padding-left: 20px;
+}
+
+h1 {
+    color: blue;
 }
 
 ul, a {
     list-style: none;
     display: flex; /* itens lado a lado */
-    justify-content: flex; /* centraliza o menu */
+    justify-content: center; /* centraliza o menu */
     gap: 140px; /* espaço entre itens */
     color: #44330e;
     padding: 20px
@@ -60,23 +65,47 @@ div figure {
     margin-top: 15%;
 }
 
-#sobre-mim {
-    display: flex;           /* layout lado a lado */
-    align-items: center;     /* centraliza verticalmente */
-    gap: 40px;  
-    padding: 0 100px; 
-}
-
 h2 + p {
-letter-spacing: 1px;
+    letter-spacing: 1px;
 } 
 
 .lista {
     padding: 3px;
-    color: red;        
-   
+    color: rgb(167, 152, 19);       
 }
 
-#aprendizados > div {
-    background-color: blue;
+figcaption .demonstracao {
+  color: #44330e;
+
 }
+
+#sobre-mim {    
+    color: #44330e;
+    display: flex;           /* layout lado a lado */
+    align-items: center;     /* centraliza verticalmente */
+    gap: 40px;  
+    padding: 0 100px;
+}
+
+#aprendizados {
+    display: flex; 
+    width: 85%;
+    padding-left: 100px;
+}
+
+#image-container {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;  
+}
+
+time[datetime="2025-08-29T11:10"] {
+    color: rgb(128, 98, 18);
+    font-weight: bold;
+}
+
+.tabela-de-estudo th {
+    font-style: italic;
+}
+
